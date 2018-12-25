@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_match_parent"
+    android:background="@color/colorF4F4"
+    android:layout_height="match_parent"
+    tools:context=".ui.mine.activity.WithdrawDepositActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_wd_account"
+        style="@style/ll_h_border_bottom_and_top"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:paddingLeft="@dimen/d_10dp">
+
+        <TextView
+            android:id="@+id/account_tv"
+            style="@style/mine_text"
+            android:text="@string/add_withdraw_account" />
+
+        <ImageView style="@style/in_right_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_h_border_bottom_and_top"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d_10dp"
+        android:paddingTop="@dimen/d_10dp">
+
+        <TextView
+            style="@style/text"
+            android:text="提现金额" />
+
+
+        <LinearLayout
+            style="@style/h_match_parent"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                style="@style/text"
+                android:text="￥"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/withdraw_money_et"
+                style="@style/match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_h_border_bottom_and_top"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:paddingLeft="@dimen/d_12dp"
+        android:paddingRight="@dimen/d_10dp">
+
+        <TextView
+            android:id="@+id/money_tv"
+            style="@style/mine_text"
+            android:text="可用余额0元" />
+
+        <TextView
+            android:id="@+id/all_withdraw_tv"
+            style="@style/text14colorPrimaryDark"
+            android:text="全部提现" />
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d_15dp"
+        android:text="24小时内到帐" />
+
+    <Button
+        android:id="@+id/withdraw_bt"
+        style="@style/button_style"
+        android:layout_marginTop="20dp"
+        android:text="@string/withdraw_deposit" />
+
+</LinearLayout>

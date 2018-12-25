@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanmei.bilan.widget.ShareNewsView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/share_dialog_icon1" />
+
+
+        <LinearLayout
+            style="@style/text"
+            android:layout_marginLeft="@dimen/d_8dp"
+            android:layout_marginRight="@dimen/d_8dp"
+            android:layout_marginTop="@dimen/d_10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/d_8dp"
+                android:layout_height="@dimen/d_8dp"
+                android:background="@drawable/circle_time" />
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/d_5dp"
+                android:id="@+id/time_tv"
+                style="@style/text" />
+
+        </LinearLayout>
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/content_tv"-->
+        <!--style="@style/text"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_marginLeft="@dimen/d_20dp"-->
+        <!--android:layout_marginRight="@dimen/d_20dp"-->
+        <!--android:text="@string/set" />-->
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <include
+            android:id="@+id/sudokuView"
+            layout="@layout/view_sudoku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_8dp"
+            android:layout_marginLeft="@dimen/d_8dp"
+            android:layout_marginRight="@dimen/d_8dp"/>
+
+
+        <LinearLayout
+            style="@style/h_match_parent"
+            android:layout_marginBottom="@dimen/d_20dp"
+            android:layout_marginLeft="@dimen/d_8dp"
+            android:layout_marginRight="@dimen/d_8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_code"
+                android:layout_width="@dimen/d_100dp"
+                android:layout_height="@dimen/d_100dp"
+                android:src="@mipmap/default_pic" />
+
+
+            <LinearLayout
+                style="@style/v_match_parent"
+                android:layout_marginLeft="@dimen/d_5dp">
+
+                <TextView
+                    style="@style/text16colorWhite"
+                    android:text="长按二维码领取"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/txt_18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text16colorWhite"
+                        android:text="1688"
+                        android:textColor="@color/red"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        style="@style/text16colorWhite"
+                        android:text=" 币澜股份"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text16colorWhite"
+                    android:text="以BL糖果形式发放"
+                    android:textColor="@color/color666"
+                    android:textSize="@dimen/txt_18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.lanmei.bilan.widget.ShareNewsView>

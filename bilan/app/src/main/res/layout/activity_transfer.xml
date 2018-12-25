@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lanmei.bilan.ui.mine.activity.TransferActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        style="@style/ll_bottom">
+
+
+        <TextView
+            android:text="收款人ID："
+            style="@style/text" />
+
+        <EditText
+            android:id="@+id/id_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:hint="@string/input_id"
+            android:background="@drawable/ming_on"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        style="@style/ll_bottom">
+
+
+        <TextView
+            android:text="赠送积分："
+            style="@style/text" />
+
+        <EditText
+            android:id="@+id/transfer_ji_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:hint="@string/input_ji"
+            android:background="@drawable/ming_on"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        style="@style/ll_bottom">
+
+
+        <TextView
+            android:text="备        注："
+            style="@style/text" />
+
+        <EditText
+            android:id="@+id/remark_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:hint="@string/input_remark"
+            android:background="@drawable/ming_on"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ll_bottom"
+        android:visibility="gone"
+        android:paddingRight="@dimen/d_50dp"
+        android:paddingLeft="@dimen/d_50dp"
+        android:paddingBottom="@dimen/d_8dp"
+        android:paddingTop="@dimen/d_8dp">
+
+
+        <TextView
+            android:id="@+id/express_tv"
+            style="@style/text_weight"
+            android:background="@drawable/order_all_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="速递"
+            android:textColor="@color/text_order_selector"
+            android:textSize="@dimen/d_12dp" />
+
+        <TextView
+            android:id="@+id/dream_tv"
+            style="@style/text_weight"
+            android:background="@drawable/order_no_done_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="梦想"
+            android:textColor="@color/text_order_selector"
+            android:textSize="@dimen/d_12dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/fragment_single_listview"/>
+    <!--<com.xson.common.widget.NoScrollViewPager-->
+        <!--android:id="@+id/viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+</LinearLayout>

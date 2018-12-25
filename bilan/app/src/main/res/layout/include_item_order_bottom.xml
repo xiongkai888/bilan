@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_top"
+    android:gravity="right">
+
+
+    <TextView
+        android:id="@+id/contact_tv"
+        android:layout_width="@dimen/d_80dp"
+        android:layout_height="@dimen/d_30dp"
+        android:layout_margin="@dimen/d_10dp"
+        android:background="@drawable/mine_order_w"
+        android:gravity="center"
+        android:text="@string/contact_merchant" />
+
+    <TextView
+        android:id="@+id/refund_tv"
+        android:layout_width="@dimen/d_80dp"
+        android:layout_height="@dimen/d_30dp"
+        android:layout_margin="@dimen/d_10dp"
+        android:background="@drawable/mine_order_w"
+        android:gravity="center"
+        android:text="@string/refund" />
+
+    <TextView
+        android:id="@+id/affirm_tv"
+        android:layout_width="@dimen/d_80dp"
+        android:layout_height="@dimen/d_30dp"
+        android:layout_margin="@dimen/d_10dp"
+        android:background="@drawable/mine_order"
+        android:gravity="center"
+        android:text="@string/affirm_receive"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

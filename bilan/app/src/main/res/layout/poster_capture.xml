@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanmei.bilan.widget.InvitePosterView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/invite3" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_20dp"
+            android:layout_marginLeft="@dimen/d_20dp"
+            android:layout_marginRight="@dimen/d_20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text16colorBlack"
+                    android:drawableLeft="@mipmap/invite4"
+                    android:drawablePadding="@dimen/d_5dp"
+                    android:gravity="center_vertical"
+                    android:text="币澜"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/text"
+                    android:layout_marginTop="@dimen/d_5dp"
+                    android:text="全国首家可挖矿" />
+
+                <TextView
+                    style="@style/text14color2b"
+                    android:textColor="@color/color999"
+                    android:layout_marginTop="@dimen/d_5dp"
+                    android:text="区块链媒体平台" />
+
+            </LinearLayout>
+
+            <TextView style="@style/text_weight" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_code"
+                    android:src="@mipmap/default_pic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" />
+
+
+                <TextView
+                    style="@style/text14color2b"
+                    android:layout_marginTop="@dimen/d_5dp"
+                    android:text="长按二维码领取" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</com.lanmei.bilan.widget.InvitePosterView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanmei.bilan.widget.KaiSpinner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/kai_spinner"
+    android:background="@drawable/spinner_bg">
+
+    <Spinner
+        android:id="@+id/spinner_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:theme="@android:style/Theme.Holo.Light" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:paddingRight="@dimen/d_10dp"
+        android:src="@mipmap/icon_down" />
+
+</com.lanmei.bilan.widget.KaiSpinner>

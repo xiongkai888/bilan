@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent">
+
+    <!--<TextView-->
+        <!--android:id="@+id/line_tv"-->
+       <!--style="@style/line_H10dp_no" />-->
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp"
+        android:layout_marginTop="@dimen/d_10dp"
+        style="@style/text"
+        android:text="TEX" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp"
+        style="@style/ll_no_border">
+
+        <TextView
+            style="@style/text12color999"
+            android:layout_weight="1"
+            android:text="BTC/1.1万" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/text"
+            android:text="￥456456" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp"
+        android:layout_marginBottom="@dimen/d_10dp"
+        style="@style/ll_no_border">
+
+        <TextView
+            android:layout_weight="1"
+            style="@style/text12color999"
+            android:text="最高44271.21\u3000最低40271.21" />
+
+        <TextView
+            style="@style/text12color999"
+            android:layout_marginLeft="10dp"
+            android:text="$42.55.5" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:id="@+id/attention_tv"
+            style="@style/text12colorWhite"
+            android:background="@drawable/market"
+            android:gravity="center"
+            android:minWidth="@dimen/d_50dp"
+            android:text="-0.32%" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

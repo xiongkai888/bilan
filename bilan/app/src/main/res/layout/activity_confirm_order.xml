@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lanmei.bilan.ui.goods.ConfirmOrderActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                style="@style/ll_no_border">
+
+                <include
+                    layout="@layout/include_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/in_right" />
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H10dp_no" />
+
+            <LinearLayout
+                android:id="@+id/ll_item_goods"
+                style="@style/v_match_parent">
+
+                <include
+                    layout="@layout/item_discover_two" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                style="@style/ll_bottom">
+
+                <TextView
+                    style="@style/text"
+                    android:layout_marginBottom="@dimen/d_10dp"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:layout_marginTop="@dimen/d_10dp"
+                    android:gravity="center"
+                    android:text="结算详情" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_bottom"
+                android:layout_marginLeft="@dimen/d_10dp">
+
+                <TextView
+                    style="@style/mine_text"
+                    android:text="商品总数：" />
+
+                <TextView
+                    android:id="@+id/num_tv"
+                    style="@style/text"
+                    android:layout_marginRight="@dimen/d_10dp"
+                    android:text="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_bottom"
+                android:layout_marginLeft="@dimen/d_10dp">
+
+                <TextView
+                    style="@style/mine_text"
+                    android:text="运费：" />
+
+                <TextView
+                    android:id="@+id/fee_tv"
+                    style="@style/text14colorAccent"
+                    android:layout_marginRight="@dimen/d_10dp"
+                    android:text="@string/price_sub_value" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_no_border"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/mine_text"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="订单总价：" />
+
+                <TextView
+                    style="@style/text14colorAccent"
+                    android:layout_marginRight="@dimen/d_10dp"
+                    android:text="@string/price_sub" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_no_border"
+                android:layout_marginLeft="@dimen/d_10dp">
+
+                <TextView
+                    style="@style/mine_text"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="商品金额：" />
+
+                <TextView
+                    android:id="@+id/goods_price_tv"
+                    style="@style/text14colorAccent"
+                    android:layout_marginRight="@dimen/d_10dp"
+                    android:text="@string/price_sub_value" />
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H10dp_no" />
+
+            <LinearLayout
+                style="@style/ll_bottom"
+                android:paddingLeft="@dimen/d_10dp"
+                android:paddingRight="@dimen/d_10dp">
+
+                <TextView
+                    style="@style/mine_text"
+                    android:text="付款方式" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_bottom"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:padding="@dimen/d_10dp">
+
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="余额支付" />
+
+
+                <CheckBox
+                    android:id="@+id/yu_e_cn"
+                    android:layout_width="@dimen/d_20dp"
+                    android:layout_height="@dimen/d_20dp"
+                    android:layout_marginRight="@dimen/d_5dp"
+                    android:background="@drawable/check_bg"
+                    android:button="@null" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/ll_bottom"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:padding="@dimen/d_10dp">
+
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="支付宝支付" />
+
+
+                <CheckBox
+                    android:id="@+id/zhifubao_cb"
+                    android:layout_width="@dimen/d_20dp"
+                    android:layout_height="@dimen/d_20dp"
+                    android:layout_marginRight="@dimen/d_5dp"
+                    android:background="@drawable/check_bg"
+                    android:button="@null" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/ll_bottom"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:padding="@dimen/d_10dp">
+
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="微信支付" />
+
+
+                <CheckBox
+                    android:id="@+id/weixin_cb"
+                    android:layout_width="@dimen/d_20dp"
+                    android:layout_height="@dimen/d_20dp"
+                    android:layout_marginRight="@dimen/d_5dp"
+                    android:background="@drawable/check_bg"
+                    android:button="@null" />
+
+            </LinearLayout>
+
+            <TextView
+              style="@style/line_H10dp_no"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/ll_top"
+        android:layout_height="@dimen/d_45dp">
+
+
+        <TextView
+            android:id="@+id/total_price_tv"
+            style="@style/text_weight"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:text="总价：￥0"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/submit_order_tv"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

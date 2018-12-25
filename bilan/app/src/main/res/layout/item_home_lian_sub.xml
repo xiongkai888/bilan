@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/text14color999"
+        android:layout_margin="@dimen/d_10dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="火爆社区" />
+</LinearLayout>

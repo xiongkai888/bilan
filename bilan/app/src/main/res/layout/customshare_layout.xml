@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_capture"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/d_5dp"
+        android:layout_marginBottom="@dimen/d_2dp"
+        android:layout_marginRight="@dimen/d_20dp"
+        android:layout_marginLeft="@dimen/d_20dp"
+        android:gravity="center_horizontal"
+        android:background="@color/transparency"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_30dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/d_8dp"
+            android:text="您的邀请码：123456"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/d_10dp"
+        android:paddingTop="@dimen/d_10dp">
+
+        <RelativeLayout
+            android:id="@+id/view_share_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/share_icon"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/umeng_socialize_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/share_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d_2dp"
+                android:text="微信" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_share_weixinfriend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/share_icon2"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/umeng_socialize_wxcircle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/share_icon2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d_2dp"
+                android:text="微信朋友圈" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_share_weixin_favorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/share_icon3"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/umeng_socialize_fav" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/share_icon3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d_2dp"
+                android:text="微信收藏" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/share_icon4"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/float_share_icon_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/share_icon4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d_2dp"
+                android:text="保存" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/share_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorF4F4"
+        android:gravity="center"
+        android:paddingBottom="@dimen/d_10dp"
+        android:paddingTop="@dimen/d_10dp"
+        android:text="取消" />
+
+</LinearLayout>

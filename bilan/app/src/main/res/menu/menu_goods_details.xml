@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_share"
+        android:icon="@mipmap/icon_share_b"
+        android:title="客服"
+        app:showAsAction="always"
+       />
+    <item
+        android:id="@+id/action_shop_car"
+        android:title="客服"
+        app:actionProviderClass="com.lanmei.bilan.ui.goods.ShopActionProvider"
+        app:showAsAction="always" />
+</menu>

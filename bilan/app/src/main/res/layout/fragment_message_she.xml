@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/search_friends" />
+
+    <TextView style="@style/line_H1dp_CD"/>
+
+    <com.xson.common.widget.SmartSwipeRefreshLayout
+        android:id="@+id/pull_refresh_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@null" />
+</LinearLayout>

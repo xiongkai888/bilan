@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.lanmei.bilan.ui.mine.activity.BurseActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/v_match_parent">
+
+            <TextView
+                style="@style/line_H1dp_CD"
+                android:layout_marginTop="20dp"/>
+
+
+            <LinearLayout
+                style="@style/v_match_parent">
+
+
+                <LinearLayout
+                    style="@style/h_match_parent"
+                    android:gravity="bottom"
+                    android:padding="30dp">
+
+                    <LinearLayout
+                        style="@style/text"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            style="@style/text">
+
+                            <ImageView
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@mipmap/withdraw_balance"/>
+
+                            <TextView
+                                android:id="@+id/balance_tv"
+                                style="@style/text10color2b"
+                                android:layout_centerInParent="true"
+                                android:text="0.00"
+                                android:textColor="#ff0000"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/text"
+                            android:layout_marginTop="5dp"
+                            android:text="当前余额"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/h_match_parent"
+                        android:gravity="right">
+
+                        <TextView
+                            style="@style/text"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/withdraw_ka"
+                            android:gravity="center_horizontal"
+                            android:text="我的银行卡"
+                            android:textColor="@color/colorPrimaryDark"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/h_match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_vertical">
+
+
+                    <LinearLayout
+                        style="@style/text"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/text16colorBlack"
+                            android:text="提现金额"/>
+
+                        <TextView
+                            style="@style/text"
+                            android:text="(100以上)"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/h_match_parent"
+                        android:layout_marginRight="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="end|center_vertical">
+
+                        <ImageView
+                            android:id="@+id/num_subtract_iv"
+                            style="@style/text"
+                            android:padding="3dp"
+                            android:src="@mipmap/num_subtract"/>
+
+                        <EditText
+                            android:id="@+id/money_et"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/mine_order_w"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:padding="3dp"
+                            android:text="100"/>
+
+
+                        <ImageView
+                            android:id="@+id/num_add_iv"
+                            style="@style/text"
+                            android:padding="3dp"
+                            android:src="@mipmap/num_add"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/line_H1dp_CD"
+                    android:layout_marginLeft="20dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_choose_ka"
+                    style="@style/ll_bottom"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        style="@style/text16colorBlack"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="银行卡"/>
+
+                    <TextView
+                        android:id="@+id/card_tv"
+                        style="@style/text16colorBlack"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@mipmap/icon_in"
+                        android:text="请选择银行卡"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/text12color999"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d_20dp"
+                android:text="2个工作日内到帐"/>
+
+            <Button
+                android:id="@+id/carry_bt"
+                style="@style/button_style"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:text="提现"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

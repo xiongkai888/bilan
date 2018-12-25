@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/h_match_parent"
+    android:gravity="center_vertical"
+    android:padding="@dimen/d_10dp">
+
+
+    <LinearLayout
+       style="@style/text_weight"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/h_match_parent"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/content_tv"
+                style="@style/text_weight" />
+
+            <TextView
+                android:id="@+id/price_tv"
+                style="@style/text"
+                android:text="0"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/h_match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/balance_tv"
+                style="@style/text_weight"
+                android:text="余额：0"/>
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/text12color666" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

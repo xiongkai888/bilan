@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_no_border">
+
+
+    <LinearLayout
+        style="@style/v_match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            style="@style/line_v1dp_CD"
+            android:layout_height="@dimen/d_10dp" />
+
+        <TextView
+            android:layout_width="@dimen/d_8dp"
+            android:layout_height="@dimen/d_8dp"
+            android:background="@drawable/circle_time" />
+
+        <TextView
+            style="@style/line_v1dp_CD"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/v_match_parent"
+        android:layout_marginLeft="@dimen/d_5dp"
+        android:layout_marginRight="@dimen/d_10dp">
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/text"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/d_5dp"
+            android:background="@mipmap/message_bg"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/d_8dp"
+            android:paddingRight="@dimen/d_5dp"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/text"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp" />
+
+
+        <!--<include-->
+        <!--android:id="@+id/sudokuView"-->
+        <!--layout="@layout/view_sudoku" />-->
+
+        <com.lanmei.bilan.widget.DoubleScaleImageView
+            android:id="@+id/only_imageView"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/d_200dp"
+            android:src="@mipmap/default_pic_b" />
+
+
+        <TextView
+            android:id="@+id/position_tv"
+            style="@style/text"
+            android:drawableLeft="@mipmap/icon_coordinate"
+            android:drawablePadding="@dimen/d_5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingTop="@dimen/d_5dp"
+            android:visibility="gone" />
+
+        <LinearLayout style="@style/ll_no_border">
+
+            <LinearLayout
+                android:id="@+id/ll_zan"
+                style="@style/text_weight"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_10dp">
+
+                <ImageView
+                    android:id="@+id/zan_iv"
+                    style="@style/text"
+                    android:src="@mipmap/lihao_off" />
+
+                <TextView
+                    android:id="@+id/zan_tv"
+                    style="@style/text12color999"
+                    android:layout_marginLeft="@dimen/d_3dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_likong"
+                style="@style/text_weight"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_10dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/likong_iv"
+                    style="@style/text"
+                    android:src="@mipmap/likong_off" />
+
+                <TextView
+                    android:id="@+id/comment_num_tv"
+                    style="@style/text12color999"
+                    android:layout_marginLeft="@dimen/d_3dp"
+                    android:text="利空0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_share"
+                style="@style/text_weight"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_10dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/home_share" />
+
+                <TextView
+                    android:id="@+id/share_tv"
+                    style="@style/text12color999"
+                    android:layout_marginLeft="@dimen/d_3dp"
+                    android:text="@string/share" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        android:background="@color/colorF4F4"
+        style="@style/ll_no_border">
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/d_10dp"
+            android:text="火爆社区" />
+        <TextView
+            style="@style/text"
+            android:layout_margin="@dimen/d_10dp"
+            android:drawableRight="@mipmap/in_right"
+            android:gravity="center"
+            android:text="更多" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

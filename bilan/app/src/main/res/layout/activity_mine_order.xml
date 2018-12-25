@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:padding="@dimen/d_10dp">
+
+
+        <TextView
+            android:id="@+id/all_tv"
+            style="@style/text_weight"
+            android:background="@drawable/order_all_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/all"
+            android:textColor="@color/text_order_selector"
+            android:textSize="@dimen/d_12dp" />
+
+        <TextView
+            android:id="@+id/no_pay_tv"
+            style="@style/text_weight"
+            android:background="@drawable/order_done_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/no_pay"
+            android:textColor="@color/text_order_selector"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/wait_harvest_tv"
+            style="@style/text_weight"
+            android:background="@drawable/order_done_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/wait_harvest"
+            android:textColor="@color/text_order_selector"
+            android:textSize="@dimen/txt_12sp" />
+
+        <TextView
+            android:id="@+id/done_tv"
+            style="@style/text_weight"
+            android:background="@drawable/order_no_done_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/done"
+            android:textColor="@color/text_order_selector"
+            android:textSize="@dimen/d_12dp" />
+
+    </LinearLayout>
+
+    <TextView style="@style/line_H1dp_CD" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

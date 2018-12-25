@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_no_border"
+    android:padding="10dp">
+
+
+    <com.xson.common.widget.CircleImageView
+        android:id="@+id/user_head_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/default_pic" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="bithus" />
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/text14color999"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="BTC" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/attention_tv"
+        style="@style/text"
+        android:text="208888 BTC" />
+
+
+</LinearLayout>

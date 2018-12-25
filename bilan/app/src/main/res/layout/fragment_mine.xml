@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/v_match_parent">
+
+            <FrameLayout
+                style="@style/match_parent"
+                android:gravity="center_horizontal">
+
+
+                <LinearLayout
+                    style="@style/h_match_parent"
+                    android:layout_margin="@dimen/d_10dp"
+                    android:paddingTop="@dimen/d_15dp">
+
+                    <com.xson.common.widget.CircleImageView
+                        android:id="@+id/head_iv"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@mipmap/default_pic" />
+
+                    <LinearLayout
+                        style="@style/v_match_parent"
+                        android:layout_marginLeft="@dimen/d_10dp">
+
+
+                        <TextView
+                            android:id="@+id/name_tv"
+                            style="@style/text"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="JACK"
+                            android:textSize="@dimen/txt_18sp" />
+
+                        <TextView
+                            android:id="@+id/grade_tv"
+                            style="@style/text12colorBlack"
+                            android:text="@string/bt_grade" />
+
+                        <TextView
+                            android:id="@+id/signature_tv"
+                            style="@style/text"
+                            android:layout_marginTop="@dimen/d_5dp"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="一句话介绍自己" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/data_iv"
+                    style="@style/text"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/d_10dp"
+                    android:text="@string/setting" />
+
+            </FrameLayout>
+
+            <TextView style="@style/line_H1dp_CD" />
+
+            <LinearLayout
+                style="@style/ll_no_border"
+                android:layout_height="@dimen/d_40dp">
+
+                <TextView
+                    android:id="@+id/fans_num_tv"
+                    style="@style/text16colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fans" />
+
+                <TextView
+                    style="@style/line_v1dp_CD"
+                    android:layout_marginBottom="@dimen/d_5dp"
+                    android:layout_marginTop="@dimen/d_5dp" />
+
+                <TextView
+                    android:id="@+id/attention_num_tv"
+                    style="@style/text16colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/follow" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/v_match_parent"
+                android:background="@color/colorF4F4"
+                android:padding="@dimen/d_10dp">
+
+
+                <TextView
+                    style="@style/text"
+                    android:text="什么是BL糖果？" />
+
+
+                <LinearLayout
+                    style="@style/h_match_parent"
+                    android:layout_marginBottom="@dimen/d_10dp"
+                    android:layout_marginTop="@dimen/d_10dp"
+                    android:background="@color/colorF4F4"
+                    android:gravity="center_horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_BL1"
+                        style="@style/h_match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/d_50dp"
+                        android:background="@drawable/mine_bg"
+                        android:gravity="center_vertical">
+
+
+                        <ImageView
+                            style="@style/text"
+                            android:layout_marginLeft="@dimen/d_10dp"
+                            android:src="@mipmap/mine_bl1" />
+
+                        <TextView
+                            style="@style/text12color666"
+                            android:layout_marginLeft="@dimen/d_5dp"
+                            android:text="币澜没有那么神秘\n听币澜创始人聊币澜" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_BL2"
+                        style="@style/h_match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/d_50dp"
+                        android:layout_marginLeft="@dimen/d_10dp"
+                        android:background="@drawable/mine_bg"
+                        android:gravity="center_vertical">
+
+
+                        <ImageView
+                            style="@style/text"
+                            android:layout_marginLeft="@dimen/d_10dp"
+                            android:src="@mipmap/mine_bl2" />
+
+                        <TextView
+                            style="@style/text12color666"
+                            android:layout_marginLeft="@dimen/d_5dp"
+                            android:text="BL糖果俱乐部\n顶尖人脉  一手信息" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text"
+                    android:layout_marginBottom="@dimen/d_10dp"
+                    android:text="如何获取糖果？" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_BL3"
+                    style="@style/h_match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_50dp"
+                    android:background="@drawable/mine_bg"
+                    android:gravity="center_vertical">
+
+
+                    <ImageView
+                        style="@style/text"
+                        android:layout_marginLeft="@dimen/d_10dp"
+                        android:src="@mipmap/mine_bl3" />
+
+                    <TextView
+                        style="@style/text12color666"
+                        android:layout_marginLeft="@dimen/d_5dp"
+                        android:text="币澜如何获取糖果？听币澜创始人聊币澜糖果" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_bim"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_1" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="糖果宝盒" />
+
+                    <TextView
+                        android:id="@+id/num_tv"
+                        style="@style/text14colorAccent"
+                        android:visibility="visible" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_invite_friends"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_91" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="@string/invite_friend" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wallet"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_2" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="钱包" />
+
+                    <TextView
+                        style="@style/text14colorAccent"
+                        android:text="￥1280.50"
+                        android:visibility="gone" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_property_book"
+                style="@style/ll_no_border"
+                android:visibility="gone"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_3" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="资产账本" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_information_backups"
+                style="@style/ll_no_border"
+                android:visibility="gone"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_4" />
+
+                <LinearLayout
+                    style="@style/ll_no_border"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="资料备份" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H10dp_bottom" />
+
+            <LinearLayout
+                android:id="@+id/ll_member_center"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_5" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="会员中心" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_dynamic"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_92" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="我的动态" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_article"
+                style="@style/ll_no_border"
+                android:visibility="visible"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_6" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="我的文章" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_setting"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_7" />
+
+                <LinearLayout
+                    style="@style/ll_no_border"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="设置" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H10dp_bottom" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_shopping_cart"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_8" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="我的购物车" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_my_order"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_93" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="我的订单" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_app_recommend"
+                style="@style/ll_no_border"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@mipmap/mine_9" />
+
+                <LinearLayout
+                    style="@style/ll_bottom"
+                    android:layout_marginLeft="5dp">
+
+                    <TextView
+                        style="@style/mine_text"
+                        android:text="应用推荐" />
+
+                    <ImageView style="@style/in_right_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

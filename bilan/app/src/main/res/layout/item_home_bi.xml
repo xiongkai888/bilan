@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/v_match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/text16color2b"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+
+    <include
+        android:id="@+id/sudokuView"
+        layout="@layout/view_sudoku" />
+
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/incident_tv"
+            style="@style/text10color61" />
+
+        <TextView
+            android:id="@+id/comment_num_tv"
+            style="@style/text10color61"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/text10color61"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/top_tv"
+            android:text="@string/top"
+            android:background="@drawable/news"
+            android:paddingRight="@dimen/d_5dp"
+            android:paddingLeft="@dimen/d_5dp"
+            android:gravity="center"
+            style="@style/text10colorBlack" />
+
+    </LinearLayout>
+
+</LinearLayout>

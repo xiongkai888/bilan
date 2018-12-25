@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView style="@style/line_H10dp_no" />
+
+            <include layout="@layout/item_home_gong" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--名人堂-->
+                <LinearLayout
+                    android:id="@+id/ll_ming"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/match_parent"
+                        android:background="@color/colorF4F4"
+                        android:padding="@dimen/d_10dp"
+                        android:text="简介" />
+
+
+                    <WebView
+                        android:id="@+id/web_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <!--普通好友的-->
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/ll_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView style="@style/line_H10dp_no" />
+
+                    <LinearLayout
+                        android:padding="@dimen/d_10dp"
+                        style="@style/h_match_parent">
+
+                    <TextView
+                        android:text="个性签名："
+                        style="@style/text" />
+                    <TextView
+                        android:id="@+id/signature_tv"
+                        android:layout_marginLeft="@dimen/d_10dp"
+                        style="@style/text14color999" />
+
+                    </LinearLayout>
+                    <TextView style="@style/line_H10dp_no" />
+
+                    <LinearLayout
+                        android:padding="@dimen/d_10dp"
+                        style="@style/h_match_parent">
+
+                        <TextView
+                            android:text="地\u3000\u3000区："
+                            style="@style/text" />
+                        <TextView
+                            android:id="@+id/area_tv"
+                            android:layout_marginLeft="@dimen/d_10dp"
+                            style="@style/text14color999" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/send_bt"
+                        style="@style/button_style"
+                        android:layout_marginTop="@dimen/d_20dp"
+                        android:text="发消息" />
+                    <Button
+                        android:id="@+id/video_bt"
+                        style="@style/button_style"
+                        android:layout_marginTop="@dimen/d_15dp"
+                        android:text="@string/attach_video_call" />
+                    <Button
+                        android:id="@+id/give_bt"
+                        style="@style/button_style"
+                        android:layout_marginTop="@dimen/d_15dp"
+                        android:layout_marginBottom="@dimen/d_30dp"
+                        android:text="赠送糖果" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

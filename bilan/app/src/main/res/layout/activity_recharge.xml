@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF4F4"
+    android:orientation="vertical"
+    tools:context=".ui.mine.activity.RechargeActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/ll_h_border_bottom_and_top"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/text"
+                    android:layout_margin="10dp"
+                    android:text="充值金额" />
+
+
+            </LinearLayout>
+
+            <com.xson.common.widget.WrapHeightGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:horizontalSpacing="20dp"
+                android:numColumns="3"
+                android:padding="20dp"
+                android:verticalSpacing="20dp" />
+
+            <TextView style="@style/line_H1dp_CD" />
+
+            <LinearLayout
+                android:id="@+id/ll_input_money"
+                style="@style/ll_bottom"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/input_money_et"
+                    style="@style/editText_bottom_style"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/input_recharge_money" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ll_h_border_bottom_and_top"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/text"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="请选择充值方式" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_zhifubao_pay"
+                    style="@style/ll_bottom">
+
+                    <CheckBox
+                        android:id="@+id/cb_zhifubao"
+                        android:layout_width="@dimen/d_20dp"
+                        android:layout_height="@dimen/d_20dp"
+                        android:layout_margin="@dimen/d_10dp"
+                        android:background="@drawable/check_bg"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        style="@style/text"
+                        android:text="支付宝" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_weixin_pay"
+                    style="@style/ll_bottom">
+
+                    <CheckBox
+                        android:id="@+id/cb_weixin"
+                        android:layout_width="@dimen/d_20dp"
+                        android:layout_height="@dimen/d_20dp"
+                        android:layout_margin="@dimen/d_10dp"
+                        android:background="@drawable/check_bg"
+                        android:button="@null" />
+
+                    <TextView
+                        style="@style/text"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/affirm_bt"
+                style="@style/button_style"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                android:text="确认并充值" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

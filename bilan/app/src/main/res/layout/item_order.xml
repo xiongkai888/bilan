@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent"
+    android:background="@color/colorF4F4">
+
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            android:id="@+id/pay_no_tv"
+            style="@style/text"
+            android:text="@string/order_num"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/pay_status_tv"
+            style="@style/text_weight"
+            android:layout_marginLeft="2dp"
+            android:gravity="right"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <TextView style="@style/line_H1dp_CD" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_goods"
+        style="@style/v_match_parent">
+
+        <include
+            layout="@layout/item_discover_two" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:gravity="center_vertical|right"
+        android:padding="@dimen/d_10dp">
+
+
+        <TextView
+            android:id="@+id/total_goods_num_tv"
+            style="@style/text"
+            android:text="@string/goods_num" />
+
+        <TextView
+            style="@style/text"
+            android:layout_marginLeft="20dp"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/total_price_tv"
+            style="@style/text"
+            android:layout_marginRight="5dp"
+            android:text="@string/price_sub_value"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_item_order_bottom" />
+
+</LinearLayout>

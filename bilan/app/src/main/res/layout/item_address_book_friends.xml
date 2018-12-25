@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_no_border"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/text_weight"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="小不点" />
+
+
+
+    <TextView
+        android:id="@+id/recommend_tv"
+        style="@style/text12colorPrimaryDark"
+        android:minWidth="@dimen/attention_minWidth"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ming"
+        android:text="推荐" />
+
+
+</LinearLayout>

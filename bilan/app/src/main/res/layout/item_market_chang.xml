@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_no_border"
+    android:padding="10dp">
+
+
+    <com.xson.common.widget.CircleImageView
+        android:id="@+id/cudo_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/default_pic" />
+
+
+    <LinearLayout
+       style="@style/text_weight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/classname_tv"
+            style="@style/text"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="BTC" />
+        <TextView
+            android:id="@+id/num_tv"
+            style="@style/text12color999"
+            android:layout_marginLeft="10dp"
+            android:text="@string/num" />
+        <TextView
+            android:id="@+id/price_tv"
+            style="@style/text12color999"
+            android:layout_marginLeft="10dp"
+            android:text="@string/price" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/message_iv"
+        style="@style/text"
+        android:src="@mipmap/message"/>
+
+</LinearLayout>

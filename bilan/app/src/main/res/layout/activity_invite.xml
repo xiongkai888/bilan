@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.lanmei.bilan.ui.mine.activity.InviteActivity">
+
+    <com.xson.common.widget.CenterTitleToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextAppearance="@style/invite.TitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/d_20dp"
+                android:src="@mipmap/invite1" />
+
+            <TextView
+                android:id="@+id/invite1_tv"
+                style="@style/text"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/d_10dp"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:background="@mipmap/invite2"
+                android:gravity="center"
+                android:text="点击生成我的海报"
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/d_20dp"
+                android:paddingLeft="@dimen/d_10dp"
+                android:paddingRight="@dimen/d_10dp">
+
+
+                <TextView
+                    style="@style/text12color999"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="生成海报：生成带有我的推广二维码海报" />
+
+                <TextView
+                    android:id="@+id/invite2_tv"
+                    style="@style/text"
+                    android:background="@drawable/invite"
+                    android:paddingBottom="@dimen/d_5dp"
+                    android:paddingLeft="@dimen/d_20dp"
+                    android:paddingRight="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_5dp"
+                    android:text="立即生成"
+                    android:textColor="@color/colorFEB700"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_10dp">
+
+
+                <TextView
+                    android:id="@+id/share_url_tv"
+                    style="@style/text12color999"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="邀请链接：" />
+
+                <TextView
+                    android:id="@+id/invite3_tv"
+                    style="@style/text"
+                    android:background="@drawable/invite"
+                    android:paddingBottom="@dimen/d_5dp"
+                    android:paddingLeft="@dimen/d_20dp"
+                    android:paddingRight="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_5dp"
+                    android:text="复制地址"
+                    android:textColor="@color/colorFEB700"
+                    android:textSize="@dimen/txt_12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/d_10dp">
+
+
+                <TextView
+                    style="@style/text16colorWhite"
+                    android:layout_weight="1"
+                    android:text="邀请记录" />
+
+                <com.xson.common.widget.FormatTextView
+                    android:id="@+id/count_tv"
+                    style="@style/text14colorWhite"
+                    android:text="@string/total_candies" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d_10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:text="邀请层级"
+                    android:textColor="@color/color999" />
+
+                <TextView
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:text="一次性奖励"
+                    android:textColor="@color/color999" />
+
+                <TextView
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:text="后续收益"
+                    android:textColor="@color/color999" />
+
+                <TextView
+                    style="@style/text_weight"
+                    android:gravity="center"
+                    android:text="邀请人数"
+                    android:textColor="@color/color999" />
+
+
+            </LinearLayout>
+
+            <TextView style="@style/line_H1dp_divider" />
+
+
+
+           <LinearLayout
+               android:id="@+id/ll_invite_record"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"/>
+
+            <TextView
+                style="@style/text14colorWhite"
+                android:padding="@dimen/d_10dp"
+                android:text="邀请规则" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <TextView
+                style="@style/text12color999"
+                android:paddingBottom="@dimen/d_50dp"
+                android:paddingLeft="@dimen/d_30dp"
+                android:paddingRight="@dimen/d_30dp"
+                android:paddingTop="@dimen/d_10dp"
+                android:text="1、将你的专属二维码、链接分享至社交网络\n2、邀请好友通过你的二维码、链接下载激活币澜APP\n3、好友在币澜绑定手机后，即可立即获得糖果奖励" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

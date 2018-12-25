@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lanmei.bilan.ui.mine.activity.PropertyActivity">
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/text"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:padding="@dimen/d_5dp" />
+
+        <include layout="@layout/include_message_tab"/>
+
+
+    </RelativeLayout>
+
+
+  <android.support.v4.view.ViewPager
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

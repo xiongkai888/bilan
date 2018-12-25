@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              xmlns:tools="http://schemas.android.com/tools"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent"
+                                              android:orientation="vertical"
+                                              tools:context="com.lanmei.bilan.ui.mine.activity.PublishCommentActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/publish_shape"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/content_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/five_character"
+                    android:maxLength="400"
+                    android:padding="10dp"/>
+
+                <LinearLayout
+                    style="@style/ll_top"
+                    android:padding="@dimen/d_10dp">
+
+
+                    <TextView
+                        style="@style/text_weight"
+                        android:text="描述评价"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="1"
+                        android:progressTint="@android:color/holo_red_dark"
+                        android:stepSize="1" />
+                    <!--style="@style/mRatingBar"-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/publish_bt"
+                style="@style/button_style"
+                android:layout_marginTop="@dimen/d_30dp"
+                android:text="发表"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>
